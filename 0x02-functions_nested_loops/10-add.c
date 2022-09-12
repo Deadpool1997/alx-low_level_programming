@@ -1,15 +1,11 @@
 #include "holberton.h"
-
 /**
- * add - add two numbers from input
- * @a: first aparamet
- * @b: second parameter
- *
- * Description: adds two numbers
- * Return: Always (0).
+ * add - adds two numbers together.
+ * @i: The first number to be added.
+ * @j: The second number to be added.
+ * Return: the sum of two numbers.
  */
-
-int add(int a, int b)
+int add(int i, int j)
 {
-	return (a + b);
+	return (i + j);
 }

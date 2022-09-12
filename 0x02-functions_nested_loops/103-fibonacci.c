@@ -1,32 +1,24 @@
 #include <stdio.h>
-
 /**
- * main - Entry point
- *
- * purpose - fibonacci
- *
- * Return: (0) always
- */
-	int main(void)
+  * main - sum even fibonacci numbers under 4 million.
+  * Return: Nothing.
+  */
+int main(void)
+{
+	unsigned long count, i, j, k, sums;
+
+	i = sums = 0;
+	j = 1;
+	for (count = 0; count < 50; count++)
 	{
-		unsigned long int lim = 4000000;
-		unsigned long int bef = 0;
-		unsigned long int aft = 1;
-		unsigned long int R = 0;
-		unsigned long int sum = 0;
-
-		while (lim > R)
+		k = i + j;
+		i = j;
+		j = k;
+		if (k % 2 == 0 && k < 4000000)
 		{
-			R = bef + aft;
-
-			if ((R % 2) == 0)
-			{
-				sum += R;
-			}
-
-			bef = aft;
-			aft = R;
+			sums += k;
 		}
-		printf("%li\n", sum);
-		return (0);
+	}
+	printf("%lu\n", sums);
+	return (0);
 }
