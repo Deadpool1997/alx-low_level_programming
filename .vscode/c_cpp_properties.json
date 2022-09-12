@@ -4,7 +4,7 @@
             "name": "Mac",
             "includePath": [
                 "${workspaceFolder}/**",
-                "#include \"myHeaderFile.h\")"
+                "#include \"holberton.h\""
             ],
             "defines": [],
             "macFrameworkPath": [
