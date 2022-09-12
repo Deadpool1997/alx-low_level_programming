@@ -3,7 +3,8 @@
         {
             "name": "Mac",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "#include \"myHeaderFile.h\")"
             ],
             "defines": [],
             "macFrameworkPath": [
@@ -13,7 +14,9 @@
             "compilerPath": "/usr/bin/clang",
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "${default}"
+            "intelliSenseMode": "macos-clang-x86",
+            "configurationProvider": "ms-vscode.cmake-tools ",
+            "mergeConfigurations": true
         }
     ],
     "version": 4
