@@ -3,7 +3,6 @@
         {
             "name": "Mac",
             "includePath": [
-                "${workspaceFolder}/**",
                 "#include \"holberton.h\""
             ],
             "defines": [],
