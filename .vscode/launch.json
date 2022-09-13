@@ -9,7 +9,7 @@
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
-            "externalConsole": false,
+            "externalConsole": true,
             "MIMode": "lldb",
             "preLaunchTask": "C/C++: clang build active file"
         },
@@ -21,8 +21,8 @@
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
+            "environment": [ ],
+            "externalConsole": true,
             "MIMode": "lldb",
             "preLaunchTask": "C/C++: gcc build active file"
         }
