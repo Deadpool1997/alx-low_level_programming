@@ -3,18 +3,17 @@
         {
             "name": "Mac",
             "includePath": [
-                "${workspaceFolder}/**",
-                "#include \"holberton.h\""
+                "#include \"myHeaderFile.h\""
             ],
             "defines": [],
             "macFrameworkPath": [
                 "/System/Library/Frameworks",
                 "/Library/Frameworks"
             ],
-            "compilerPath": "/usr/bin/clang",
+            "compilerPath": "/usr/bin/clang++",
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "macos-clang-x86",
+            "intelliSenseMode": "macos-clang-x64",
             "configurationProvider": "ms-vscode.cmake-tools ",
             "mergeConfigurations": true
         }

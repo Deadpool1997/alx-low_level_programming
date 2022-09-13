@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 0. _putchar
 Write a program that prints Holberton, followed by a new line.
 1. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
@@ -22,3 +23,6 @@ Write a function that prints the 9 times table, starting with 0.
 Write a function that adds two integers and returns the result.
 11. Holberton School, 98 Battery Street, San Francisco CA 94111
 Write a function that prints all natural numbers from n to 98, followed by a new line.
+=======
+# Lets do this
+>>>>>>> a89258b298a7808255981c710ee6d598d1a0de34
