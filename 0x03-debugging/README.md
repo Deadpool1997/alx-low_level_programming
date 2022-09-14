@@ -1,1 +1,1 @@
-# 0x03-debugging
+# Debugging refers to the process of locating and fixing bugs (defects or issues that prevent a computer program, software, or system from functioning properly). Debugging techniques include interactive debugging, control flow analysis, unit testing, integration testing, log file analysis, application or system level monitoring, memory dumps, and profiling
