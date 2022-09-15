@@ -1,34 +1,46 @@
 #include "main.h"
-
 /**
- * print_number - prints an integer on console
- * @n: number to be printed
- *
- * Return: void, and the stated print
+ * print_number - print an int numbers.
+ * @n: number tested
+ * Return: Always 0.
  */
-
 void print_number(int n)
 {
+	int i, j, digit, digits, power;
+	unsigned int temp, numchar, number;
+
+	digit = 0;
 	if (n < 0)
+	{
 		_putchar('-');
-	print_any_int(n);
-}
+		temp = -n;
+	}
+	else
+	{
+		temp = n;
+	}
 
-/**
- * print_any_int - uses _putchar to print every digit of any int
- * @m: input integer to be printed with _putchar
- *
- * Return: void, printing every digit of m into stdout
- */
-void print_any_int(int m)
-{
-	int last;
+	number = temp;
 
-	if (m / 10)
-		print_any_int(m / 10);
+	while (number >= 10)
+	{
+		number = number / 10;
+		digit++;
+	}
+	digits = digit + 1;
+	power = 1;
+	i = 1;
 
-	last = m % 10;
-	if (last < 0)
-		last = last * -1;
-	_putchar(last + '0');
+	while (i < digits)
+	{
+		power = power * 10;
+		i++;
+	}
+	j = power;
+	while (j >= 1)
+	{
+		numchar = (temp / j) % 10;
+		_putchar(numchar + '0');
+		j = j / 10;
+	}
 }
