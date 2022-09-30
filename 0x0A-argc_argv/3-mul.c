@@ -1,23 +1,27 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
- * main - multiply the args
- * @argc: Argument count
- * @argv: Array of argument strings
- *
- * Return: 0 for successful exit
- */
-int main(int argc, char *argv[])
-{
-	if (argc < 2)
-	{
-		printf("Error");
-	}
-	else
-	{
-		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
-	}
+* main - multiplies two numbers
+* @argc: number of arguments
+* @argv: the vector that hold the arguments
+*
+* Description: using arc and argv to achieve the indended function
+* Return: returns 0 if it works or something else if error
+*/
 
+int main(int argc, char **argv)
+{
+	int product;
+
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	product = atoi(argv[1]) * atoi(argv[2]);
+	printf("%d\n", product);
 	return (0);
 }
